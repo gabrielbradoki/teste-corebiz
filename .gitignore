@@ -2,3 +2,4 @@ helpers.text
 _MACOSX
 node_modules
 .DS_Store
+.vscode

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import product from "./../../data";
+import product from "./../../api";
 import Slider from "react-slick";
 import Buttons from '../../components/Common/Buttons';
 import formatNumber from '../../helpers/index';
