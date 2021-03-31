@@ -1,0 +1,59 @@
+@import './_general';
+
+.newsletter {
+  background-color: $color-3;
+  padding: 30px;
+
+  &__content {
+
+    @include respond-above(md) {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: bold;
+
+      @include respond-above(md) {
+        text-align: center;
+      }
+    }
+
+    .newsletter__register {
+      font-size: 0.8rem;
+      margin: 15px 0 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+
+      @include respond-above(md) {
+        flex-direction: row;
+      }
+
+      .newsletter__input {
+        width: 38%;
+        height: 50px;
+        padding: 0 16px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        margin: 11px 16px;
+        box-sizing: border-box;
+      }
+
+      .newsletter__button {
+        cursor: pointer;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        background-color: $black;
+        color: $white;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
